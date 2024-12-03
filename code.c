@@ -7,9 +7,9 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class HospitalManagementSystem extends JFrame {
-    private static final String url = "jdbc:mysql://localhost:3306/hospital";
+    private static final String url = "ur url";
     private static final String dbUsername = "root";
-    private static final String dbPassword = "rootroot";
+    private static final String dbPassword = "";
     private Connection connection;
 
     private float headingOpacity = 0.0f;  // Initial opacity for fade-in effect
@@ -32,7 +32,7 @@ public class HospitalManagementSystem extends JFrame {
         setLocationRelativeTo(null);
 
         // Create a BackgroundPanel with the image path
-        BackgroundPanel backgroundPanel = new BackgroundPanel("C:/Users/Ayush/OneDrive/Desktop/Hospital-Management.png");
+        BackgroundPanel backgroundPanel = new BackgroundPanel("image path as png");
         backgroundPanel.setLayout(new BorderLayout());
 
         // Header Panel
@@ -487,9 +487,9 @@ public class HospitalManagementSystem extends JFrame {
 
 
 class LoginPage extends JFrame {
-    private static final String url = "jdbc:mysql://localhost:3306/hospital";
+    private static final String url = "ur url";
     private static final String dbUsername = "root";
-    private static final String dbPassword = "rootroot";
+    private static final String dbPassword = "password";
     private Connection connection;
 
     public LoginPage() {
@@ -507,7 +507,7 @@ class LoginPage extends JFrame {
         setLocationRelativeTo(null);
 
         // Background panel with image
-        BackgroundPanel backgroundPanel = new BackgroundPanel("C:/Users/Ayush/Downloads/TITLE-6.png");
+        BackgroundPanel backgroundPanel = new BackgroundPanel("image path");
         backgroundPanel.setLayout(new BorderLayout());
 
         // Transparent panel for login form components
