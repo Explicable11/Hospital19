@@ -226,7 +226,7 @@ public class HospitalManagementSystem extends JFrame {
             }
 
             try {
-                String query = "INSERT INTO patients(name, age, gender) VALUES(?, ?, ?)";
+                String query = "INSERT INTO patients(Name, Age, Gender) VALUES(?, ?, ?)";
                 try (PreparedStatement preparedStatement = connection.prepareStatement(query)) {
                     preparedStatement.setString(1, name);
                     preparedStatement.setInt(2, age);
@@ -255,9 +255,9 @@ public class HospitalManagementSystem extends JFrame {
              ResultSet resultSet = preparedStatement.executeQuery()) {
             while (resultSet.next()) {
                 int id = resultSet.getInt("id");
-                String name = resultSet.getString("name");
+                String name = resultSet.getString("Name");
                 int age = resultSet.getInt("age");
-                String gender = resultSet.getString("gender");
+                String gender = resultSet.getString("Gender");
                 patientList.append(String.format("| %-10s | %-18s | %-8s | %-10s |\n", id, name, age, gender));
                 patientList.append("+------------+--------------------+----------+------------+\n");
             }
@@ -278,8 +278,8 @@ public class HospitalManagementSystem extends JFrame {
              ResultSet resultSet = preparedStatement.executeQuery()) {
             while (resultSet.next()) {
                 int id = resultSet.getInt("id");
-                String name = resultSet.getString("name");
-                String  specialization = resultSet.getString("specialization");
+                String name = resultSet.getString("Name");
+                String  specialization = resultSet.getString("Specialization");
                 doctorList.append(String.format("| %-10s | %-18s | %-8s |\n", id, name,specialization));
                 doctorList.append("+------------+--------------------+----------+------------+\n");
             }
@@ -294,7 +294,7 @@ public class HospitalManagementSystem extends JFrame {
         String[] columns = {"Doctor ID", "Schedule", "Time Slot"};
 
         // Query to get the doctor schedule details
-        String query = "SELECT doctor_id, Schedule, time_slot FROM doctor_schedule";
+        String query = "SELECT doctor_id, Schedule, Time_slot FROM doctor_schedule";
 
         try (Statement statement = connection.createStatement();
              ResultSet resultSet = statement.executeQuery(query)) {
@@ -302,9 +302,9 @@ public class HospitalManagementSystem extends JFrame {
             // Get the data from the database and store it in a list of rows
             List<Object[]> data = new ArrayList<>();
             while (resultSet.next()) {
-                int doctorId = resultSet.getInt("doctor_id");
-                String schedule = resultSet.getString("schedule");
-                String timeSlot = resultSet.getString("time_slot");
+                int doctorId = resultSet.getInt("Doctor_id");
+                String schedule = resultSet.getString("Schedule");
+                String timeSlot = resultSet.getString("Time_slot");
                 data.add(new Object[]{doctorId, schedule, timeSlot});
             }
 
