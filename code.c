@@ -12,7 +12,7 @@ public class HospitalManagementSystem extends JFrame {
     private static final String dbPassword = "";
     private Connection connection;
 
-    private float headingOpacity = 0.0f;  // Initial opacity for fade-in effect
+    private float headingOpacity = 0.0f;  // Initial opacity for fade-in effect using this lines
     private Timer fadeInTimer;
 
     private int backgroundOffsetX = 0;
@@ -294,7 +294,7 @@ public class HospitalManagementSystem extends JFrame {
         String[] columns = {"Doctor ID", "Schedule", "Time Slot"};
 
         // Query to get the doctor schedule details
-        String query = "SELECT doctor_id, schedule, time_slot FROM doctor_schedule";
+        String query = "SELECT doctor_id, Schedule, time_slot FROM doctor_schedule";
 
         try (Statement statement = connection.createStatement();
              ResultSet resultSet = statement.executeQuery(query)) {
