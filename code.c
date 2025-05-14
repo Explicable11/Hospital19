@@ -12,7 +12,7 @@ public class HospitalManagementSystem extends JFrame {
     private static final String dbPassword = "";
     private Connection connection;
 
-    private float headingOpacity = 0.0f;  // Initial opacity for fade-in effect using this lines
+    private float headingOpacity = 0.0f;  // initial opacity for fade-in effect using this lines
     private Timer fadeInTimer;
 
     private int backgroundOffsetX = 0;
@@ -31,11 +31,11 @@ public class HospitalManagementSystem extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
-        // Create a BackgroundPanel with the image path
+        // create a BackgroundPanel with the image path
         BackgroundPanel backgroundPanel = new BackgroundPanel("image path as png");
         backgroundPanel.setLayout(new BorderLayout());
 
-        // Header Panel
+        // header panel
         JPanel headerPanel = new JPanel();
         headerPanel.setOpaque(false); // Make header transparent so background shows
         JLabel headerLabel = new JLabel("Hospital Management System");
