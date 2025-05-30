@@ -178,7 +178,7 @@ public class HospitalManagementSystem extends JFrame {
         return button;
     }
 
-    // Custom JPanel class for full-size background image
+    // Custom JPanel Class for full-size background image
     class BackgroundPanel extends JPanel {
         private Image backgroundImage;
 
