@@ -66,7 +66,7 @@ public class HospitalManagementSystem extends JFrame {
         JButton deletePatientButton = createStyledButton("Delete Patient");
         JButton exitButton = createStyledButton("Exit");
 
-        // Add ActionListeners to each button (existing code remains unchanged)
+        // add actionListeners to each button (existing code remains unchanged)
         addPatientButton.addActionListener(e -> addPatient());
         viewPatientsButton.addActionListener(e -> viewPatients());
         viewDoctorsButton.addActionListener(e -> viewDoctors());
