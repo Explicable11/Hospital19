@@ -85,7 +85,7 @@ public class HospitalManagementSystem extends JFrame {
         deletePatientButton.addActionListener(e -> deletePatient());
         exitButton.addActionListener(e -> System.exit(0));
 
-        // Add Buttons to Panel
+        // add buttons to panel
         gbc.gridx = 0;
         gbc.gridy = 0;
         buttonPanel.add(addPatientButton, gbc);
