@@ -35,7 +35,7 @@ public class HospitalManagementSystem extends JFrame {
         BackgroundPanel backgroundPanel = new BackgroundPanel("image path as png");
         backgroundPanel.setLayout(new BorderLayout());
 
-        // Header Panel
+        // header Panel
         JPanel headerPanel = new JPanel();
         headerPanel.setOpaque(false); // Make header transparent so background shows
         JLabel headerLabel = new JLabel("Hospital Management System");
