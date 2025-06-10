@@ -55,7 +55,7 @@ public class HospitalManagementSystem extends JFrame {
         gbc.insets = new Insets(10, 10, 10, 10);
         gbc.fill = GridBagConstraints.HORIZONTAL;
 
-        // Buttons
+        // buttons
         JButton addPatientButton = createStyledButton("Add Patient");
         JButton viewPatientsButton = createStyledButton("View Patients");
         JButton viewDoctorsButton = createStyledButton("View Doctors");
