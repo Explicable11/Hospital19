@@ -46,7 +46,7 @@ public class HospitalManagementSystem extends JFrame {
 
         headerPanel.add(headerLabel);
 
-        // Button Panel
+        // button Panel
         JPanel buttonPanel = new JPanel(new GridBagLayout());
         buttonPanel.setOpaque(false); // Make button panel transparent
         buttonPanel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
