@@ -31,7 +31,7 @@ public class HospitalManagementSystem extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
-        // create a backgroundPanel with the image path
+        // Create a backgroundPanel with the image path
         BackgroundPanel backgroundPanel = new BackgroundPanel("image path as png");
         backgroundPanel.setLayout(new BorderLayout());
 
