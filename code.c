@@ -12,7 +12,7 @@ public class HospitalManagementSystem extends JFrame {
     private static final String dbPassword = "";
     private Connection connection;
 
-    private float headingOpacity = 0.0f;  // initial Opacity For Fade-In effect using this lines
+    private float headingOpacity = 0.0f;  // initial opacity For Fade-In effect using this lines
     private Timer fadeInTimer;
 
     private int backgroundOffsetX = 0;
